@@ -1,0 +1,751 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    font-family: "Raleway";
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    margin-bottom: 0;
+    font-size: 22px;
+}
+
+.lien-publication {
+    text-decoration: none;
+    color: black;
+
+}
+
+.lien-publication-activity {
+    text-decoration: none;
+    color: black;
+    width: 23%;
+}
+
+.lien-publication-hotel-populaire {
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    display: inline-block;
+}
+
+.sous-titre-h1 {
+    margin-top: 8px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo-booki {
+
+    width: 75px;
+
+
+}
+
+.Boutonhauteur {
+    padding: 30px;
+    text-decoration: none;
+    color: #0065FC;
+    display: inline-block;
+}
+
+.navbar .lien-de-recherche ul {
+    display: flex;
+
+}
+
+
+.Boutonhauteur:hover {
+    border-top: #0065FC 3px solid;
+
+}
+
+
+
+.barre-de-recherche {
+    display: flex;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.barre-de-recherche ::placeholder {
+    font-family: "Raleway";
+    font-weight: bold;
+    background-color: white;
+    font-size: 1.1rem;
+
+}
+
+.mini-titre {
+    margin-bottom: 50px;
+    font-size: 1.3rem;
+}
+
+
+
+.title-filter {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+.bouton-de-recherche,
+.bouton-de-recherche-mobile {
+    color: white;
+    background-color: #0065FC;
+    font-family: "Raleway";
+    border: none;
+    border-radius: 0 15px 15px 0;
+    font-weight: bold;
+    padding: 15px 16px 15px 16px;
+    font-size: 1.1rem;
+}
+
+.icone-de-recherche {
+    background-color: #D9D9D9;
+    padding: 15px 16px 15px 16px;
+    display: inline-block;
+    border-radius: 15px 0px 0 15px;
+}
+
+.input-recherche {
+    border-right: none;
+    border-left: none;
+    border-top: #D9D9D9 1px solid;
+    border-bottom: #D9D9D9 1px solid;
+    padding: 0 1.5rem;
+    box-sizing: border-box;
+    width: 14rem;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: "Raleway";
+}
+
+.boutonfiltre {
+    border-radius: 30px 30px 30px 30px;
+    font-family: "Raleway";
+    font-weight: bold;
+    padding: 12px;
+    border: solid;
+    display: flex;
+    display: inline-block;
+    border-color: #D9D9D9;
+    background-color: white;
+    font-size: 1rem;
+    margin: 12px;
+    text-decoration: none;
+    color: black;
+}
+
+.boutonfiltre:hover {
+    background: #DEEBFF;
+}
+
+.filtre {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-filters {
+    display: flex;
+    align-items: center;
+}
+
+.infodispo {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0 2rem 0;
+
+
+}
+
+.infodispo i {
+    height: 1.5rem;
+    width: 1.5rem;
+    min-height: 1rem;
+    min-width: 1rem;
+    border: solid 1px #D9D9D9;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    
+    color: #0065FC;
+
+
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+.titre-herbergement {
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.hebergements-marseille {
+    background-color: #D9D9D9;
+    border-radius: 30px 30px 30px 30px;
+    flex-grow: 1;
+}
+
+.tableau-hotel {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.bouton-de-recherche-mobile {
+    display: none;
+
+}
+
+.image-hotel {
+
+    height: 7rem;
+    object-fit: cover;
+    max-width: 100%;
+    width: 100%;
+    max-height: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.hotel {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.etoile-bleu {
+    color: #0065FC;
+}
+
+.icone-filtre {
+    color: #0065FC;
+}
+
+.etoile-vide {
+    color: #D9D9D9;
+    padding-left: 1.5px;
+}
+
+.prix-hotel {
+    margin: 0;
+    margin-left: 12px;
+}
+
+.hotel-populaire {
+    background-color: white;
+    border-radius: 1rem;
+    display: flex;
+    padding: 0.25rem;
+
+
+}
+
+.image-hotel-populaire {
+    height: 144px;
+    object-fit: cover;
+    border-radius: 1rem 0px 0px 1rem;
+    width: 100%;
+    max-width: 137px;
+  }
+
+
+.prix-hotel-populaire {
+    margin: 0;
+    margin-left: 12px;
+}
+
+.hotel-description {
+    display: flex;
+    flex-direction: column;
+}
+
+.note-hotel-populaire {
+    display: flex;
+    margin-left: 12px;
+    margin-top: auto;
+
+}
+
+
+
+.nom-de-hotel {
+    margin: 0;
+    margin-left: 12px;
+    padding-bottom: 2px;
+    margin-top: 5px;
+    margin-bottom: 4px;
+}
+
+.titre-les-plus-populaire {
+
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    margin-bottom: 1.6rem;
+}
+
+.titre-les-plus-populaire i {
+    color: #0065FC;
+}
+
+.nom-de-hotel-populaire {
+    margin: 0;
+    margin-left: 12px;
+    padding-bottom: 2px;
+    margin-top: 5px;
+    margin-bottom: 4px;
+
+}
+
+.modification-ipad-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.note-hotel {
+    display: flex;
+    margin-bottom: auto;
+    margin-left: 12px;
+    margin-top: 5px;
+}
+
+
+.activity {
+    box-shadow: 0 0 20px #0000002e;
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+}
+
+.nom-d-activity {
+    border-radius: 1rem;
+    padding-left: 10px;
+
+
+}
+
+.activity-img {
+    object-fit: cover;
+    height: 410px;
+    width: 100%;
+    margin: 0;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.activity-a-marsielle {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.rangement-hotel-populaire {
+    background-color: #D9D9D9;
+    padding: 41px;
+    margin-left: 50px;
+    width: 30%;
+    border-radius: 30px 30px 30px 30px;
+}
+
+.rangementtable {
+    display: flex;
+    align-items: flex-start;
+
+}
+
+.titre-activity {
+
+    margin-top: 65px;
+    margin-left: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.site-footer {
+    background-color: #D9D9D9;
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
+
+.site-footer-container {
+    display: flex;
+}
+
+.column {
+    width: 30%;
+    padding-left: 75px;
+}
+
+.info-suplemantaire {
+    padding-bottom: 0px;
+}
+
+li {
+    padding-bottom: 15px;
+}
+
+/*******************************************************************/
+@media (max-width: 1300px) and (min-width: 993px) {
+
+    .hotel-populaire {
+
+        display: flex;
+        flex-direction: column;
+
+        padding: 5px;
+    }
+
+    .image-hotel-populaire {
+        height: 7rem;
+        object-fit: cover;
+        max-width: 100%;
+        width: 100%;
+        max-height: 100%;
+        border-radius: 20px 20px 0 0;
+
+    }
+
+
+}
+
+
+
+/*******************************************************************/
+
+@media (max-width: 992px) {
+
+
+    .container {
+        width: 90%;
+        max-width: 992px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .lien-publication-hotel-populaire {
+
+        width: 100%;
+    }
+
+    .rangementtable {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .rangement-hotel-populaire {
+        margin-left: 0;
+        width: 100%;
+        margin-top: 50px;
+
+
+    }
+
+    .modification-ipad-flex {
+        gap: 23px;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+
+
+    .note-hotel-populaire {
+        margin-top: auto;
+    }
+
+
+
+
+
+    .hotel-populaire {
+        height: 100%;
+        margin: 0;
+    }
+
+    .logo-booki {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+
+
+
+    .activity-img {
+        object-fit: cover;
+        height: 267px;
+        
+        max-height: 185px;
+    }
+
+    .activity {
+        height: 270px;
+        width: 100%;
+    }
+
+    .image-hotel-populaire {
+        max-width: 106px;
+        height: 100%;
+
+    }
+
+
+}
+
+/*******************************************************************/
+@media (max-width: 870px) and (min-width: 769px) {
+
+    .hotel-populaire {
+
+        display: flex;
+        flex-direction: column;
+
+        padding: 5px;
+    }
+
+    .image-hotel-populaire {
+        height: 7rem;
+        object-fit: cover;
+        max-width: 100%;
+        width: 100%;
+        max-height: 100%;
+        border-radius: 20px 20px 0 0;
+
+    }
+
+
+
+
+}
+
+
+/*******************************************************************/
+
+
+@media (max-width: 768px) {
+
+
+
+    .container {
+        width: 100%;
+        max-width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .lien-publication-hotel-populaire {
+
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .rangementtable {
+        flex-direction: column-reverse;
+    }
+
+    .modification-ipad-flex {
+        flex-direction: column
+    }
+
+    .tableau-hotel {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .activity-a-marsielle {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-mobile {
+        margin-left: 1.8rem;
+        margin-right: 1.8rem;
+    }
+
+
+
+    .site-footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hebergements-marseille {
+        border-radius: 0px;
+    }
+
+
+    .rangement-hotel-populaire {
+        padding: 0;
+        border-radius: 0px;
+        padding-bottom: 47px;
+    }
+
+    .hebergements-marseille {
+        background-color: white;
+        border-radius: 0px;
+
+    }
+
+    .hotel {
+
+        box-shadow: 0 0 20px #0000002e;
+        border-radius: 1rem;
+    }
+
+    .hotel-populaire {
+        box-shadow: 0 0 20px #0000002e;
+        border-radius: 1rem;
+        width: 100%;
+        margin-bottom: -10px;
+
+    }
+
+    .menu-filters {
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    .filters {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        width: 100%;
+
+    }
+
+
+    .title-filter {
+        margin-bottom: 0.75rem;
+    }
+
+    .boutonfiltre {
+        margin: 0;
+        text-align: left;
+
+    }
+
+    .input-recherche {
+
+        width: 100%;
+    }
+
+    .activity {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .activity-img {
+        width: 100%;
+    }
+
+    .column {
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    .site-footer {
+
+        align-items: flex-start;
+    }
+
+
+
+
+
+    .Boutonhauteur {
+        border-bottom: #D9D9D9 3px solid;
+        border-top: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .Boutonhauteur:hover {
+        border-top: none;
+        border-bottom: #0065FC 3px solid;
+
+    }
+
+    .lien-de-recherche {
+        display: flex;
+        width: 100%;
+    }
+
+    .lien-publication-activity {
+        width: 100%;
+    }
+
+
+    .titre-les-plus-populaire {
+        margin-top: 1.6rem;
+    }
+
+
+    .bouton-de-recherche-mobile {
+        display: block;
+    }
+
+    .bouton-de-recherche {
+        display: none;
+
+    }
+
+    .image-hotel-populaire {
+        height: 144px;
+        width: 137px;
+
+    }
+
+    .mini-titre {
+        display: none;
+    }
+
+    .infodispo {
+
+        margin: 2.5rem 0 0rem 0;
+    }
+
+    .boutonfiltre {
+        font-size: .69rem;
+    }
+
+
+}
